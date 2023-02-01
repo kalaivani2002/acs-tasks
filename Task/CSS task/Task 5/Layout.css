@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+  }
+body{
+    color: white;
+    background-color: black;
+}
+.divider{
+    width: 300px;
+    margin: 0 auto;
+    height: 15px;
+    border-bottom: 20px solid rgb(86, 226, 203);
+}
+p{
+    font-family: Open Sans, sans-serif;
+    text-align:center;
+    letter-spacing: 1.5rem;
+    font-weight: bold;
+}

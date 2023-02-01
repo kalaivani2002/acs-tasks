@@ -1,0 +1,104 @@
+*{
+    background-color: #D3D3D3;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+div{
+    margin: 5px;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+}
+.red{
+    width: 30%;
+    min-height: 75px;
+    background-color: #ff0000;
+}
+.Inkblue{
+    width: 70%;
+    min-height: 75px;
+    background-color: #6200ff;
+}
+.row2{
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+}
+.yellow{
+    width: 100%;
+    min-height: 150px;
+    background-color: rgba(255, 238, 0, 0.747);
+}
+.row3{
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+}
+.green{
+    width: 30%;
+    min-height: 75px;
+    background-color: rgb(112, 247, 78);
+}
+.purple{
+    width: 35%;
+    min-height: 75px;
+    background-color: rgb(99, 3, 59);
+}
+.violet{
+    width: 35%;
+    min-height: 75px;
+    background-color: rgb(138, 73, 163) ;
+}
+.row4{
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+}
+.orange{
+    width: 50%;
+    min-height: 75px;
+    background-color: rgb(255, 123, 0);
+}
+.yellow2{
+    width: 50%;
+    min-height: 75px;
+    background-color: rgb(208, 255, 0);
+}
+.row5{
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+}
+.green2{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(0, 128, 0);
+}
+.lightblue{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(19, 167, 147);
+}
+.brown{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(117, 8, 8);
+}
+.blue{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(77, 4, 160);                                              
+}
+.row6{
+     display: flex;
+     width: 100%;
+     min-height:25px;
+}
+.darkbrown{
+    width: 100%;
+    min-height: 25px;
+    background-color: rgb(22, 2, 2);
+}

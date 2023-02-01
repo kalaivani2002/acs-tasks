@@ -1,0 +1,25 @@
+body{
+    background-color: #f8dada;
+    margin: 0px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+}
+
+.box1{
+    height: auto;
+    width: 1050px;
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: absolute;
+    right: 90px;
+    top: 55px;
+}
+.box3{
+    height: auto;
+    width: 1280px;
+}

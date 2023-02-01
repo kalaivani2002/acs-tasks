@@ -1,0 +1,10 @@
+.box{
+    position: absolute;
+    width: calc(10px + 50px);
+    height: 60px;
+    top: 40%;
+    right: 10%;
+    padding: 10px;
+    border: none;
+    background-color: red;
+}
