@@ -1,0 +1,12 @@
+table, th, td{
+    border: 1px solid black;
+}
+.yellow {
+   background-color:  rgb(243, 243, 188);
+}
+.purple{
+    background-color: rgb(167, 129, 202);
+}
+.green{
+    background-color: rgb(151, 255, 202);
+}
