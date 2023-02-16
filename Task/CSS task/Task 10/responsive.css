@@ -1,0 +1,181 @@
+*{
+    background-color: #D3D3D3;
+    padding: 3px 12px 3px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+div{
+    margin:8px;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+}
+.red{
+    width: 30%;
+    min-height: 75px;
+    background-color: rgb(204,38,38);
+}
+.Inkblue{
+    width: 70%;
+    min-height: 75px;
+    background-color: rgb(31,78,148);
+}
+.row2{
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+}
+.yellow{
+    width: 100%;
+    min-height: 150px;
+    background-color: rgb(179,148,42);
+}
+.row3{
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+}
+.green{
+    width: 30%;
+    min-height: 75px;
+    background-color: rgb(32,189,48);
+}
+.purple{
+    width: 35%;
+    min-height: 75px;
+    background-color: rgb(159,21,130);
+}
+.violet{
+    width: 35%;
+    min-height: 75px;
+    background-color: rgb(109,79,193) ;
+}
+.row4{
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+}
+.orange{
+    width: 50%;
+    min-height: 75px;
+    background-color: rgb(209,91,41);
+}
+.yellow2{
+    width: 50%;
+    min-height: 75px;
+    background-color: rgb(198,202,30);
+}
+.row5{
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+}
+.green2{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(11,143,41);
+}
+.lightblue{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(49,154,160);
+}
+.brown{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(131,21,22);
+}
+.blue{
+    width: 25%;
+    min-height: 40px;
+    background-color: rgb(44,22,182);                                              
+}
+.row6{
+     display: flex;
+     width: 100%;
+     min-height:25px;
+}
+.darkbrown{
+    width: 100%;
+    min-height: 25px;
+    background-color: rgb(50,11,12);
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .row1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .yellow, .darkbrown{
+        margin: 1% 0;
+    }
+    .red, .Inkblue{
+        margin: 2% 0;
+        width: 48%;
+    }
+    .row3{
+        flex-direction: column;
+    }
+    .green, .purple, .violet{
+        width: 100%;
+        height: 50%;
+        margin: 1% 0;
+    }
+    .row4{
+        flex-direction: column;
+    }
+    .orange, .yellow2{
+        width: 100%;
+        height: 50%;
+        margin: 1% 0;
+    }
+    .row5{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .green2, .lightblue, .brown, .blue{
+        width: 48%;
+        height: 50%;
+        margin: 1% 0;
+    }
+}   
+@media (max-width: 600px){
+    .row1{
+        flex-direction: column;
+    }
+    .red, .Inkblue{
+        width: 100%;
+        height: 50%;
+        margin: 1% 0;
+    }
+    .row3{
+        flex-direction: column;
+    }
+    .green, .purple, .violet{
+        width: 100%;
+        height: 50%;
+        margin: 1% 0;
+    }
+    .row4{
+        flex-direction: column;
+    }
+    .orange, .yellow2{
+        width: 100%;
+        height: 50%;
+        margin: 1% 0;
+    }
+    .row5{
+        flex-direction: column;
+    }
+    .lightblue, .green2, .brown, .blue{
+        width: 100%;
+        height: 50%;
+        margin: 1% 0%;
+    }
+    .yellow, .darkbrown{
+        width: 100%;
+        margin: 1% 0;
+    }
+}
