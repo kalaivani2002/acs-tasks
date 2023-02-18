@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left-aside{
+    background-color: black;
+}
+.heading{
+    background-color: black; 
+    margin: 2%;
+}
+.main-heading{
+    margin: 2%;
+    color: black;
+}
+
+.card-box p{
+    padding: 0 5% 5% 5%;
+    margin: 0;
+    color: black;
+}
+.card-box h2{
+    background-color: black;
+    padding: 3%;
+    padding-left: 5%;
+    margin-top: 0;
+}
+.card{
+    border: 2px solid black;
+    margin: 4%;
+    box-shadow:  -1px 0 3px 2px black ;
+}
+.heading{
+    padding: 1% 4% 1% 4%;
+}
+.left-aside{
+    padding: 15px 3px 15px 15px;
+}
+h4{
+    margin: 0;
+}
+
+.link{
+    float: right;
+}
+.link1, .link2{
+    padding-right: 10px;
+}
+
+.main-heading p{
+    font-size: small;
+}
+.link1, .link2, .link3{
+    font-weight: lighter;
+    font-size: small;
+}
