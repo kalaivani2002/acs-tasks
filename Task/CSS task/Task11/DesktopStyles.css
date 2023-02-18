@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+    .body-box{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .heading{
+        height: 98%;
+    }
+    .card-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 30%;
+    }
+    .card-one, .card-three, .card-two{
+        margin-right: 1%;
+        flex-grow: 1;
+    }
+   .card-two, .card-three, .card-five{
+        margin-left: 1%;
+    }
+    .card-four{
+        margin-right: 1%;
+    }
+    .card{
+        margin-bottom: 0;
+    }
+
+
+}
