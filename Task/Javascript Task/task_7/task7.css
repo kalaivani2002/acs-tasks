@@ -1,0 +1,17 @@
+#display{
+            height: 100px;
+            width: 500px;
+            background-color: gainsboro;
+            border-radius: 10px;
+            word-spacing: 30px;
+        }
+       
+#container{
+        display:flex;
+        flex-direction:column;
+        margin-right:85%;
+}
+button{
+        margin : 20px;
+        padding : 10px;
+}
