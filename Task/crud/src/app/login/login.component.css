@@ -1,0 +1,21 @@
+.container {
+    margin: 10% auto;
+    width: 30%;
+    padding: 20px;
+}
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+   margin: 30px;
+}
+.button{
+    width: 50%;
+}
