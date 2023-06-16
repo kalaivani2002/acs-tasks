@@ -11,6 +11,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class UserlistComponent {
  
+  currentPage = 1;
+  itemsPerPage = 4;
+  
   adduser = new FormGroup({
     name: new FormControl("", [Validators.required]),
     email: new FormControl("", [Validators.required, Validators.email]),
@@ -84,6 +87,26 @@ export class UserlistComponent {
 
   viewData(user: any){
     this.userData = user;
+  }
+  getPaginatedData(): any[] {
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    console.log(startIndex, endIndex)
+    return this.userLists.slice(startIndex, endIndex);
+  }
+
+  // Function to handle page change
+  onPageChange(pageNumber: number): void {
+    this.currentPage = pageNumber;
+  }
+  getPageNumbers(): number[] {
+    const totalPages = this.getTotalPages();
+    return Array.from({ length: totalPages }, (_, index) => index + 1);
+  }
+
+  // Function to calculate the total number of pages
+  getTotalPages(): number {
+    return Math.ceil(this.userLists.length / this.itemsPerPage);
   }
   
   get fname() {
