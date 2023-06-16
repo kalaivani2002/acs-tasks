@@ -46,17 +46,6 @@ export class UserlistComponent {
 
   }
 
-  editUser(user: any){
-    let data = {
-      name: user.name,
-      email: user.email,
-      gender: user.gender,
-      status: user.status
-    }
-    this.adduser.setValue(data);
-    this.id = user.id
-    
-  }
   deleteUser(id: any){
     this.authservice.deleteUser(id).subscribe(
       (response: any) => {
@@ -68,6 +57,18 @@ export class UserlistComponent {
       }
     )
   }
+  editUser(user: any){
+    let data = {
+      name: user.name,
+      email: user.email,
+      gender: user.gender,
+      status: user.status
+    }
+    this.adduser.setValue(data);
+    this.id = user.id
+    
+  }
+ 
 
   editUsers(){
     console.log(this.adduser.value);
