@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container center">
+        <div class="row">
+            <form [formGroup]="home">
+            <div class="form-group col-lg-10">
+              <h3>Book Explorer</h3>
+                <label class="control-label"></label>
+                <div class="input-group">
+                    <input id="txtName" class="form-control" placeholder="Search" formControlName="search"/>
+                    <!-- <div *ngIf="home.get('search')?.invalid && home.get('search')?.touched">
+                      Search field is required.
+                    </div> -->
+                    <span class="input-group-btn">
+                        <button (click)="GetData()" id="btnSearch" class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <div id="results" *ngIf="showTable && searchList">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Language</th>
+                <th>Publish Year</th>
+                <th>Place</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of searchList">
+                <td>{{item.title}}</td>
+                <td>{{ item.author_name }}</td>
+                <td>{{ item.language }}</td>
+                <td>{{ item.first_publish_year }}</td>
+                <td>{{ item.place}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
