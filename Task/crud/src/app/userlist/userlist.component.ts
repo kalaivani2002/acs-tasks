@@ -134,41 +134,4 @@ export class UserlistComponent {
 
 
 
-// import { Component } from '@angular/core';
-// import { AuthService } from '../auth.service';
-// import { Router } from '@angular/router';
-// import { HttpClient } from '@angular/common/http';
-
-// @Component({
-//   selector: 'app-userlist',
-//   templateUrl: './userlist.component.html',
-//   styleUrls: ['./userlist.component.css']
-// })
-// export class UserlistComponent {
-//   userLists: any = [];
-
-//   constructor(
-//     public authservice: AuthService,
-//     public router: Router,
-//     public http: HttpClient
-//   ) {}
-
-//   getData() {
-//     const url = 'https://gorest.co.in/public/v2/users';
-
-//     const userData = {
-//       // Add your desired user data properties here
-//     };
-
-//     this.http.get(url, { params: userData }).subscribe(
-//       (response: any) => {
-//         console.log('successful', response);
-//         this.userLists = response.data; // Assuming the user data is in the 'data' property
-//       },
-//       (error: any) => {
-//         console.log('Error:', error);
-//       }
-//     );
-//   }
-// }
 
